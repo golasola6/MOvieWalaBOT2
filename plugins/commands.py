@@ -98,9 +98,27 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📢 REQUEST TO JOIN CHANNEL 📢", url=invite_link.invite_link
+                    "📢 REQUEST TO JOIN CHANNEL 1 📢", url=invite_link.invite_link
                 )
             ],
+            [
+                InlineKeyboardButton(
+                    "📢 REQUEST TO JOIN FOLDER 📢", url="https://t.me/addlist/bms1dw0mVdk4YWRl"
+                )
+            ]
+        ],
+            [
+                InlineKeyboardButton(
+                    "📢 REQUEST TO JOIN FOLDER 📢", url="https://t.me/addlist/bms1dw0mVdk4YWRl"
+                )
+            ]
+        ],
+            [
+                InlineKeyboardButton(
+                    "📢 REQUEST TO JOIN FOLDER 📢", url="https://t.me/addlist/bms1dw0mVdk4YWRl"
+                )
+            ]
+        ],
             [
                 InlineKeyboardButton(
                     "📢 REQUEST TO JOIN FOLDER 📢", url="https://t.me/addlist/bms1dw0mVdk4YWRl"
