@@ -222,7 +222,9 @@ async def start(client, message):
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
-            await asyncio.sleep(1) 
+            await asyncio.sleep(1)
+        lazydeveloperr = message.from_user.id
+        await lazydeveloperr_donation(client, message)
         await sts.delete()
         return
     
@@ -394,6 +396,7 @@ async def start(client, message):
             )
             filesarr.append(msg)
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>20 minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
+        await lazydeveloperr_donation(client, message)
         await asyncio.sleep(1200)
         for x in filesarr:
             await x.delete()
@@ -486,6 +489,7 @@ async def start(client, message):
                 InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
             ]]
             k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>20 minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
+            await lazydeveloperr_donation(client, message)
             await asyncio.sleep(1200)
             await msg.delete()
             await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
@@ -551,10 +555,42 @@ async def start(client, message):
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
     k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>20 minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
+    await lazydeveloperr_donation(client, message)
     await asyncio.sleep(1200)
     await msg.delete()
     await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
+
+
+async def lazydeveloperr_donation(client, message):
+    file_id = await db.get_scanner()
+    caption = await db.get_caption()
+    donation_text = """
+<b>❤️ Support Us to Keep the Bot Alive!</b>
+
+🚀 <i>If you enjoy using this bot, consider donating something small to help us pay the server bills.</i>
+
+💰 <b>UPI:</b> <code>apnaurl@upi</code>
+
+🫶 Thank you for your love and support!
+"""
+    try:
+        if file_id:
+            await message.reply_photo(
+                photo=file_id,
+                caption=caption if caption else donation_text,
+                parse_mode=enums.ParseMode.HTML
+            )
+        else:
+            await message.reply(
+                f"{caption if caption else donation_text}",
+                parse_mode=enums.ParseMode.HTML
+            )
+    except Exception as LazyDeveloperr:
+        logger.info(LazyDeveloperr)
+        pass
+    
+
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
@@ -1198,3 +1234,67 @@ async def stop_button(bot, message):
     await asyncio.sleep(3)
     await msg.edit("**✅️ 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴**")
     os.execl(sys.executable, sys.executable, *sys.argv)
+
+
+# ====================
+# @Client.on_message(filters.command("set_scanner"))
+# async def settutorial(bot, message):
+#     userid = message.from_user.id
+#     if userid not in ADMINS:
+#         return
+#     else:
+#         pass
+#     if len(message.command) == 1:
+#         return await message.reply("<b>💔 Give me a scanner link along with this command\n\nCommand Usage: /set_scanner your scanner link</b>")
+#     elif len(message.command) == 2:
+#         reply = await message.reply_text("<b>💸 Please Wait...  </b>")
+#         tutorial = message.command[1]
+#         await db.save_scanner_link('tutorial', tutorial)
+#         await reply.edit_text(f"<b>🥰 Scanner Updated succesfully\n\nHere is your scanner link - <code>{tutorial}</code></b>")
+#     else:
+#         return await message.reply("<b>You entered Incorrect Format\n\nFormat: /set_scanner your_scanner_link</b>")
+
+@Client.on_message(filters.private & filters.command('set_caption') & filters.user(ADMINS))
+async def add_caption(client, message):
+    if len(message.command) == 1:
+       return await message.reply_text("__Give me a caption to set.__\n\n𝙴𝚡𝚊𝚖𝚙𝚕𝚎:- `/set_caption your_message`**")
+    caption = message.text.split(" ", 1)[1]
+    await db.save_caption(caption=caption)
+    await message.reply_text(f"__** Your Caption saved successfully ✅**__ \n\n`{caption}`")
+
+@Client.on_message(filters.private & filters.command("show_caption") & filters.user(ADMINS))
+async def show_caption(client, message):
+    caption = await db.get_caption()
+    
+    if caption:
+        await message.reply_text(
+            f"**📝 Current Saved Caption:**\n\n`{caption}`"
+        )
+    else:
+        await message.reply_text("❌ No caption has been saved yet, my love.")
+
+@Client.on_message(filters.private & filters.command('set_scanner') & filters.user(ADMINS))
+async def add_scanner(client, message):
+    replied = message.reply_to_message
+
+    if message.from_user.id not in ADMINS:
+        return await message.reply_text("💔")
+
+    LazyDev = await message.reply_text("Please Wait ...")
+    if replied and replied.photo:
+        await db.set_scanner(file_id=replied.photo.file_id)
+        await LazyDev.edit("**✅ Custom scanner set successfully!**")
+    else:
+        await LazyDev.edit("**❌ Please reply to a photo of scanner to set it as a custom scanner.**")
+
+@Client.on_message(filters.private & filters.command("show_scanner") & filters.user(ADMINS))
+async def show_scanner(client, message):
+    file_id = await db.get_scanner()
+
+    if file_id:
+        await message.reply_photo(
+            photo=file_id
+        )
+    else:
+        await message.reply("❌ No scanner image has been set yet.")
+

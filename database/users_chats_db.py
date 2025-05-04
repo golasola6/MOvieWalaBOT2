@@ -9,6 +9,37 @@ class Database:
         self.col = self.db.users
         self.grp = self.db.groups
         self.req = self.db.requests
+        self.mon = self.db.money
+    
+    # scanner photo
+    async def set_scanner(self, file_id):
+        await self.mon.update_one(
+            {'_id': 'LazyDeveloperr'}, 
+            {'$set': {'file_id': file_id}})
+        
+    async def get_scanner(self):
+        try:
+            thumbnail = await self.mon.find_one({'_id': 'LazyDeveloperr'})
+            if thumbnail:
+                return thumbnail.get('file_id')
+            else:
+                return None
+        except Exception as e:
+            print(e)
+    
+    # caption
+    async def save_caption(self, caption):
+        await self.mon.update_one(
+            {"_id": "LazyDeveloperr"},
+            {"$set": {"caption": caption}},
+            upsert=True
+        )
+
+    async def get_caption(self):
+        data = await self.mon.find_one({"_id": 'LazyDeveloperr'})
+        return data.get("caption") if data else None
+
+
 
     async def find_join_req(self, id):
         return bool(await self.req.find_one({'id': id}))
