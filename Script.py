@@ -14,6 +14,8 @@ Aʟʟ Tʜᴇ Fɪʟᴇꜱ Iɴ Tʜɪꜱ Bᴏᴛ Aʀᴇ Fʀᴇᴇʟʏ Aᴠᴀɪʟ�
 
     ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
 ‣ ᴍʏ ɴᴀᴍᴇ : {}
+‣ OWNER : <a href='https://t.me/Simplifytuber2'>Simplifytuber</a>
+‣ Developer : <a href='https://t.me/lazyDeveloperr'>LazyDeveloperr</a>
 ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
@@ -77,7 +79,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     
 • ꜰᴜʟʟ ɴᴀᴍᴇ : Simplifytuber
 • ᴜꜱᴇʀɴᴀᴍᴇ : @Simplifytuber2
-• ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ : <a href='t.me/LazyDeveloeprr'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>"""
+• ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ : <a href='t.me/LazyDeveloeprr'>->LazyDeveloperr</a>"""
 
 
     ADMIN_TXT = """ʜᴇʟᴘ: Aᴅᴍɪɴ Mᴏᴅs
@@ -588,21 +590,21 @@ Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ /buy_premium"""
 ᴠ10.5 [sᴛᴀʙʟᴇ]"""
 
     PREMIUM_TXT = """🎖️ PREMIUM MEMBERSHIP 🎖️
+🎖 PREMIUM MEMBERSHIP LIVE! 🎖
+🔥 LATEST MOVIES & SERIES — SAME DAY RELEASE
+🚫 NO ADS | 🌐 ALL LANGUAGES | ❌ NO FREE TRIAL
 
-⚡ WE ARE HAPPY TO ANNOUNCE OUR BOT'S PREMIUM MEMBERSHIP FOR PREMIUM USERS IN CHEAP RATES ⚜️
+🎯 OFFER ENDING 5 JUNE! 🎯
 
-🥶 BENEFITS OF IT:
-👉 FREE MOVIES / SERIES
-👉 NEW RELEASES ON SAME DAY
-👉 WITHOUT ANY ADS
+💸 NEW PRICES:
+✨ 1 Month – ₹100 (Quick access, no commitment)
+🔥 3 Month – ₹225 (₹75/mo — Save ₹225)
+⚡️ 6 Month – ₹375 (₹62/mo — Save ₹375)
+⭐️ 9 Month – ₹450 (₹50/mo — Save ₹450)
+🏆 12 Month – ₹550 (₹45/mo — Save ₹550)
 
-👉 EVERY LANGUAGE AVAILABLE
-👉 5 days free Trial
-
-🥶 PRICE:
-💸 ONLY 50₹ / Month
-
-🚨 If You Need To buy Contact @Simplifytuber2 to buy."""
+⚠️ LIMITED SLOTS!
+💬 DM 👉 @Simplifytuber2 TO BUY NOW!"""
 
     BUY_INFO = """ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴏɴʟʏ ғᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ"""
 
