@@ -1,10 +1,10 @@
 class script(object):
-START_TXT = """<b>ʜᴇʟʟᴏ {} ,
+    START_TXT = """<b>ʜᴇʟʟᴏ {} ,
 \n✦ ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs.\n✦ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.</b>"""
 
-HELP_TXT = """<b>Hᴇʏ {}
+    HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
-DISCLAIMER_TXT = """<b>Tʜɪꜱ Bᴏᴛ Iꜱ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.
+    DISCLAIMER_TXT = """<b>Tʜɪꜱ Bᴏᴛ Iꜱ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.
 
 Aʟʟ Tʜᴇ Fɪʟᴇꜱ Iɴ Tʜɪꜱ Bᴏᴛ Aʀᴇ Fʀᴇᴇʟʏ Aᴠᴀɪʟᴀʙʟᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ Oʀ Pᴏꜱᴛᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟꜱᴇ. Tʜɪꜱ Bᴏᴛ Iꜱ Iɴᴅᴇxɪɴɢ Fɪʟᴇꜱ Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ Oɴ Tᴇʟᴇɢʀᴀᴍ Fᴏʀ Eᴀꜱʏ Oғ Sᴇᴀʀᴄʜɪɴɢ, Wᴇ Rᴇꜱᴘᴇᴄᴛ Aʟʟ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛ Lᴀᴡꜱ Aɴᴅ Wᴏʀᴋꜱ Iɴ Cᴏᴍᴘʟɪᴀɴᴄᴇ Wɪᴛʜ DMCA ᴀɴᴅ EUCD. Iғ Aɴʏᴛʜɪɴɢ Iꜱ Aɢᴀɪɴꜱᴛ Lᴀᴡ Pʟᴇᴀꜱᴇ Cᴏɴᴛᴀᴄᴛ Uꜱ Sᴏ Tʜᴀᴛ Iᴛ Cᴀɴ Bᴇ Rᴇᴍᴏᴠᴇᴅ Aꜱᴀᴘ. Iᴛ Iꜱ Fᴏʀʙɪᴅᴅᴇɴ Tᴏ Dᴏᴡɴʟᴏᴀᴅ, Sᴛʀᴇᴀᴍ, Rᴇᴘʀᴏᴅᴜᴄᴇ, Oʀ Bʏ Aɴʏ Mᴇᴀɴꜱ, Sʜᴀʀᴇ, Oʀ Cᴏɴꜱᴜᴍᴇ, Cᴏɴᴛᴇɴᴛ Wɪᴛʜᴏᴜᴛ Exᴘʟɪᴄɪᴛ Pᴇʀᴍɪꜱꜱɪᴏɴ Fʀᴏᴍ Tʜᴇ Cᴏɴᴛᴇɴᴛ Cʀᴇᴀᴛᴏʀ Oʀ Lᴇɢᴀʟ Cᴏᴘʏʀɪɢʜᴛ Hᴏʟᴅᴇʀ. Iғ Yᴏᴜ Bᴇʟɪᴇᴠᴇ Tʜɪꜱ Bᴏᴛ Iꜱ Vɪᴏʟᴀᴛɪɴɢ Yᴏᴜʀ Iɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ Pʀᴏᴘᴇʀᴛʏ, Cᴏɴᴛᴀᴄᴛ Tʜᴇ Rᴇꜱᴘᴇᴄᴛɪᴠᴇ Cʜᴀɴɴᴇʟꜱ Fᴏʀ Rᴇᴍᴏᴠᴀʟ. Tʜᴇ Bᴏᴛ Dᴏᴇꜱ Nᴏᴛ Oᴡɴ Aɴʏ Oғ Tʜᴇꜱᴇ Cᴏɴᴛᴇɴᴛꜱ, Iᴛ Oɴʟʏ Iɴᴅᴇx Tʜᴇ Fɪʟᴇꜱ Fʀᴏᴍ Tᴇʟᴇɢʀᴀᴍ.
 
@@ -12,7 +12,7 @@ Aʟʟ Tʜᴇ Fɪʟᴇꜱ Iɴ Tʜɪꜱ Bᴏᴛ Aʀᴇ Fʀᴇᴇʟʏ Aᴠᴀɪʟ�
 </b>
 """
 
-ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
+    ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
 ‣ ᴍʏ ɴᴀᴍᴇ : {}
 ‣ OWNER : <a href='https://t.me/Simplifytuber2'>Simplifytuber</a>
 ‣ Developer : <a href='https://t.me/lazyDeveloperr'>LazyDeveloperr</a>
@@ -21,16 +21,14 @@ ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
 ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ10.5 [sᴛᴀʙʟᴇ]></b>"""
 
-SOURCE_TXT = """
+    SOURCE_TXT = """
 <b>Hᴇʏ, Tʜɪs ʙᴏᴛ ɪs ᴀ ɴᴏᴛ  Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ ɪᴛ ɪꜱ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
 👀 Bᴜᴛ, Dᴏɴ'ᴛ ᴡᴏʀʀʏ ʙʀᴏ I ᴄʀᴇᴀᴛᴇ ʙᴏᴛ ꜰᴏʀ ʏᴏᴜ ᴊᴜꜱᴛ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ.
 
 Developer - <a href='https://t.me/LazyDeveloperr'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
-
-
-MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
+    MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 <b>ɴᴏᴛᴇ:</b>
 1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
@@ -42,7 +40,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /del - <code>ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ</code>
 • /delall - <code>ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ (ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)</code>"""
 
-BUTTON_TXT = """ʜᴇʟᴘ: <b>ʙᴜᴛᴛᴏɴꜱ</b>
+    BUTTON_TXT = """ʜᴇʟᴘ: <b>ʙᴜᴛᴛᴏɴꜱ</b>
 - ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴏᴛʜ ᴜʀʟ ᴀɴᴅ ᴀʟᴇʀᴛ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴꜱ.
 <b>ɴᴏᴛᴇ:</b>
 1. ᴛᴇʟᴇɢʀᴀᴍ ᴡɪʟʟ ɴᴏᴛ ᴀʟʟᴏᴡꜱ ʏᴏᴜ ᴛᴏ ꜱᴇɴᴅ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴄᴏɴᴛᴇɴᴛ, ꜱᴏ ᴄᴏɴᴛᴇɴᴛ ɪꜱ ᴍᴀɴᴅᴀᴛᴏʀʏ.
@@ -53,7 +51,7 @@ BUTTON_TXT = """ʜᴇʟᴘ: <b>ʙᴜᴛᴛᴏɴꜱ</b>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
-AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
+    AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
 <b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
 1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
 2. ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇꜱ ɴᴏᴛ ᴄᴏɴᴛᴀɪɴꜱ ᴄᴀᴍʀɪᴘꜱ, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇꜱ.
@@ -64,7 +62,7 @@ AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
 2. Usᴇ /connect ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴇ ʙᴏᴛ.
 3. Usᴇ /settings ᴏɴ ʙᴏᴛ's PM ᴀɴᴅ ᴛᴜʀɴ ᴏɴ AᴜᴛᴏFɪʟᴛᴇʀ ᴏɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ."""
 
-CONNECTION_TXT = """ʜᴇʟᴘ: <b>ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</b>
+    CONNECTION_TXT = """ʜᴇʟᴘ: <b>ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</b>
 - ᴜꜱᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʙᴏᴛ ᴛᴏ ᴘᴍ ꜰᴏʀ ᴍᴀɴᴀɢɪɴɢ ꜰɪʟᴛᴇʀꜱ 
 - ɪᴛ ʜᴇʟᴘꜱ ᴛᴏ ᴀᴠᴏɪᴅ ꜱᴘᴀᴍᴍɪɴɢ ɪɴ ɢʀᴏᴜᴘꜱ.
 <b>ɴᴏᴛᴇ:</b>
@@ -75,15 +73,15 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /disconnect  - <code>ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ</code>
 • /connections - <code>ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</code>"""
 
-OWNER_INFO = """⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
+    OWNER_INFO = """⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
    
 • ꜰᴜʟʟ ɴᴀᴍᴇ : Simplifytuber
 • ᴜꜱᴇʀɴᴀᴍᴇ : @Simplifytuber2
-• ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ : <a href='t.me/LazyDeveloeprr'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>"""
-• ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ : <a href='t.me/LazyDeveloeprr'>->LazyDeveloperr</a>"""
+• ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ : <a href='t.me/LazyDeveloeprr'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+• ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ : <a href='t.me/LazyDeveloeprr'>LazyDeveloperr</a>"""
 
 
-ADMIN_TXT = """ʜᴇʟᴘ: Aᴅᴍɪɴ Mᴏᴅs
+    ADMIN_TXT = """ʜᴇʟᴘ: Aᴅᴍɪɴ Mᴏᴅs
 <b>ɴᴏᴛᴇ:</b>
 Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
@@ -106,34 +104,34 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
-STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
+    STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
 
-LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}"""
 
-LOG_TEXT_P = """#NewUser
+    LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Nᴀᴍᴇ - {}"""
 
-ALRT_TXT = """ʜᴇʟʟᴏ {},
+    ALRT_TXT = """ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
 ʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ..."""
 
-OLD_ALRT_TXT = """ʜᴇʏ {},
+    OLD_ALRT_TXT = """ʜᴇʏ {},
 ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴏɴᴇ ᴏꜰ ᴍʏ ᴏʟᴅ ᴍᴇꜱꜱᴀɢᴇꜱ, 
 ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇQᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
 
-CUDNT_FND = """Sᴘᴇʟʟɪɴɢ Mɪꜱᴛᴀᴋᴇ Bʀᴏ ‼️
+    CUDNT_FND = """Sᴘᴇʟʟɪɴɢ Mɪꜱᴛᴀᴋᴇ Bʀᴏ ‼️
 Dᴏɴ'ᴛ Wᴏʀʀʏ 😊 Cʜᴏᴏꜱᴇ Tʜᴇ Cᴏʀʀᴇᴄᴛ Oɴᴇ Bᴇʟᴏᴡ 👇🏼"""
 
 
-I_CUDNT = """<b>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ {} 😕
+    I_CUDNT = """<b>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ {} 😕
 
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😃
 
@@ -147,39 +145,39 @@ I_CUDNT = """<b>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
 
-I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
+    I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
 
-MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
+    MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
 
-TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
+    TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
 
-MELCOW_ENG = """<b>Hello Dear {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️
+    MELCOW_ENG = """<b>Hello Dear {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️
 
 Must Read All Pinned Messages 📌</b>"""
 
-SHORTLINK_INFO = """
+    SHORTLINK_INFO = """
 
 🫵 Select Your Language And Earn Money 💰"""
 
-REQINFO = """
+    REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
 
 ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ
 
 ɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜱᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ / sᴇʀɪᴇs ꜰɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ"""
 
-SELECT = """
+    SELECT = """
 MOVIES ➢ Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs"
 
 SERIES ➢ Sᴇʟᴇᴄᴛ "Sᴇᴀsᴏɴs"
 
 Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛᴏɴ ᴀɴᴅ Cʟɪᴄᴋ "Sᴇɴᴅ Aʟʟ" Tᴏ ɢᴇᴛ Aʟʟ Fɪʟᴇ Lɪɴᴋs ɪɴ ᴀ Sɪɴɢʟᴇ ᴄʟɪᴄᴋ"""
 
-SINFO = """
+    SINFO = """
 🫣 Join the Movie backup channel and movie group, then click the Try Again button.😅 ok"""
 
-NORSLTS = """ 
+    NORSLTS = """ 
 ★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 
 𝗜𝗗 <b>: {}</b>
@@ -189,11 +187,11 @@ NORSLTS = """
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
 
-CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ: </b> <code>{file_name}</code>\n\n
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ: </b> <code>{file_name}</code>\n\n
 
 ⚙️ <b>Size: </b> <code>{file_size}</code>""" 
 
-IMDB_TEMPLATE_TXT = """
+    IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
 
 IMDb Data:
@@ -208,10 +206,10 @@ IMDb Data:
 🎛 Countries : <code>{countries}</code>
 </b>"""
 
-ALL_FILTERS = """
+    ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
 
-GFILTER_TXT = """
+    GFILTER_TXT = """
 <b>Wᴇʟᴄᴏᴍᴇ ᴛᴏ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs. Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs ᴀʀᴇ ᴛʜᴇ ғɪʟᴛᴇʀs sᴇᴛ ʙʏ ʙᴏᴛ ᴀᴅᴍɪɴs ᴡʜɪᴄʜ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴀʟʟ ɢʀᴏᴜᴘs.</b>
    
 Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
@@ -220,7 +218,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 • /delg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ.</code>
 • /delallg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ.</code>"""
 
-FILE_STORE_TXT = """
+    FILE_STORE_TXT = """
 <b>Fɪʟᴇ sᴛᴏʀᴇ ɪs ᴛʜᴇ ғᴇᴀᴛᴜʀᴇ ᴡʜɪᴄʜ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴀ sʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀ sɪɴɢʟᴇ ᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ғɪʟᴇs.</b>
 
 Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
@@ -229,13 +227,13 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 • /pbatch - <code>Jᴜsᴛ ʟɪᴋᴇ /batch, ʙᴜᴛ ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ғᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴs.</code>
 • /plink - <code>Jᴜsᴛ ʟɪᴋᴇ /link, ʙᴜᴛ ᴛʜᴇ ғɪʟᴇ ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ғᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴ.</code>"""
 
-SONG_TXT = """<b>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ</b> 
+    SONG_TXT = """<b>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ</b> 
      
 <b>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴜʟᴇ, ꜰᴏʀ ᴛʜᴏꜱᴇ ᴡʜᴏ ʟᴏᴠᴇ ᴍᴜꜱɪᴄ. yᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴy ꜱᴏɴɢ ᴡɪᴛʜ ꜱᴜᴩᴇʀ ꜰᴀꜱᴛ ꜱᴩᴇᴇᴅ. ᴡᴏʀᴋꜱ ʙᴏᴛ ᴀɴᴅ ɢʀᴏᴜᴩꜱ ᴏɴʟy...</b> 
  
 <b>ᴄᴏᴍᴍᴀɴᴅꜱ</b> :<b> 𝄟⃝.  /song ꜱᴏɴɢ ɴᴀᴍᴇ</b></b>""" 
 
-YTDL_TXT = """<b>ʜᴇʟᴩ yᴏᴜ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ yᴏᴜᴛᴜʙᴇ. 
+    YTDL_TXT = """<b>ʜᴇʟᴩ yᴏᴜ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ yᴏᴜᴛᴜʙᴇ. 
  
 ᴜꜱᴀɢᴇ : yᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴy ᴠɪᴅᴇᴏ ꜰʀᴏᴍ yᴏᴜᴛᴜʙᴇ 
  
@@ -243,11 +241,11 @@ YTDL_TXT = """<b>ʜᴇʟᴩ yᴏᴜ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ
  
 ᴇxᴀᴍᴩʟᴇ :<code>/mp4 https://youtu.be/example...</code></b>""" 
 
-TTS_TXT = """<b>ᴛᴛꜱ 🎤 ᴍᴏᴅᴜʟᴇ : ᴛʀᴀɴꜱʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ 
+    TTS_TXT = """<b>ᴛᴛꜱ 🎤 ᴍᴏᴅᴜʟᴇ : ᴛʀᴀɴꜱʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ 
  
 ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴀɢᴇ : /tts ᴄᴏɴᴠᴇʀᴛ ᴛᴇꜱᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ</b>""" 
 
-GTRANS_TXT = """<b>ʜᴇʟᴩ:ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ 
+    GTRANS_TXT = """<b>ʜᴇʟᴩ:ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ 
  
 ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴩꜱ yᴏᴜ ᴛᴏ ᴛʀᴀɴꜱʟᴀᴛᴇ ᴀ ᴛᴇxᴛ ᴛᴏ ᴀɴy ʟᴀɴɢᴜᴀɢᴇꜱ yᴏᴜ ᴡᴀɴᴛ. ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴡᴏʀᴋꜱ ᴏɴ ʙᴏᴛʜ ᴩᴍ ᴀɴᴅ ɢʀᴏᴜᴏ  
  
@@ -260,7 +258,7 @@ GTRANS_TXT = """<b>ʜᴇʟᴩ:ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ
 • ᴍʟ = ᴍᴀʟᴀyᴀʟᴀᴍ 
 • ʜɪ = ʜɪɴᴅɪ</b>""" 
 
-TELE_TXT = """<b>ʜᴇʟᴘ: ᴛᴇʟᴇɢʀᴀᴘʜ ᴅᴏ ᴀꜱ ʏᴏᴜ ᴡɪꜱʜ ᴡɪᴛʜ ᴛᴇʟᴇɢʀᴀ.ᴘʜ ᴍᴏᴅᴜʟᴇ! 
+    TELE_TXT = """<b>ʜᴇʟᴘ: ᴛᴇʟᴇɢʀᴀᴘʜ ᴅᴏ ᴀꜱ ʏᴏᴜ ᴡɪꜱʜ ᴡɪᴛʜ ᴛᴇʟᴇɢʀᴀ.ᴘʜ ᴍᴏᴅᴜʟᴇ! 
  
 ᴜꜱᴀɢᴇ: /telegraph - ꜱᴇɴᴅ ᴍᴇ ᴘɪᴄᴛᴜʀᴇ ᴏʀ ᴠɪᴅᴇ ᴜɴᴅᴇʀ (5ᴍʙ) 
  
@@ -268,18 +266,14 @@ TELE_TXT = """<b>ʜᴇʟᴘ: ᴛᴇʟᴇɢʀᴀᴘʜ ᴅᴏ ᴀꜱ ʏᴏᴜ ᴡ�
 ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ɢᴏᴜᴘꜱ ᴀɴᴅ ᴘᴍꜱ 
 ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ</b>""" 
 
-
-
-
-STICKER_TXT = """<b>yᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴛᴏ ꜰɪɴᴅᴀɴy  ꜱᴛɪᴄᴋᴇʀꜱ ɪᴅ. 
+    STICKER_TXT = """<b>yᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴛᴏ ꜰɪɴᴅᴀɴy  ꜱᴛɪᴄᴋᴇʀꜱ ɪᴅ. 
 • ᴜꜱᴀɢᴇ :ᴛᴏ ɢᴇᴛ ꜱᴛɪᴄᴋᴇʀ 
   
 ⭕ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ 
 ◉ Reply To Any Sticker [/stickerid]  
 </b>""" 
 
-
-JSON_TXT = """<b> 
+    JSON_TXT = """<b> 
 ᴊsᴏɴ:  
 ʙᴏᴛ ʀᴇᴛᴜʀɴs ᴊsᴏɴ ꜰᴏʀ ᴀʟʟ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs ᴡɪᴛʜ /json 
  
@@ -293,16 +287,14 @@ JSON_TXT = """<b>
  
 ᴇᴠᴇʀʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ , ɪꜰ sᴘᴀᴍɪɴɢ ʜᴀᴘᴘᴇɴs ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙᴀɴ ʏᴏᴜ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.</b>""" 
 
-
-
-SHARE_TXT = """<b>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
+    SHARE_TXT = """<b>/share ﹛ ʏᴏᴜʀ ᴛᴇxᴛ ﹜ 
  
 - ᴇx :- /share hi da 
  
 </b>""" 
 
 
-RESTART_TXT = """
+    RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
 📅 Dᴀᴛᴇ : <code>{}</code>
@@ -310,11 +302,11 @@ RESTART_TXT = """
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
-LOGO = """
+    LOGO = """
 
 BOT WORKING PROPERLY"""
 
-TAMIL_INFO = """
+    TAMIL_INFO = """
 ஏய் {} 
 
 
@@ -341,7 +333,7 @@ Exp: /set_tutorial video link
 
 மேலும் உங்கள் குழுவில் பயிற்சி வீடியோ தொகுப்பு ஆகிடும்..."""
 
-ENGLISH_INFO = """
+    ENGLISH_INFO = """
 Hey {}
 
 
@@ -370,7 +362,7 @@ Exp: /set_tutorial video link
 
 Also your tutorial will be Added Your Group..."""
 
-TELUGU_INFO = """
+    TELUGU_INFO = """
 హే {}
 
 
@@ -399,7 +391,7 @@ TELUGU_INFO = """
 
 అలాగే మీ బృందం వీడియో సేకరణకు శిక్షణ ఇస్తుంది..."""
 
-HINDI_INFO = """
+    HINDI_INFO = """
 अरे {}
 
 
@@ -428,7 +420,7 @@ HINDI_INFO = """
 
 साथ ही आपकी टीम वीडियो संग्रह का प्रशिक्षण भी देगी..."""
 
-MALAYALAM_INFO = """
+    MALAYALAM_INFO = """
 ഹേയ് {} 
 
 
@@ -457,7 +449,7 @@ MALAYALAM_INFO = """
 
 നിങ്ങളുടെ ടീം വീഡിയോ ശേഖരണവും പരിശീലിപ്പിക്കും..."""
 
-URTU_INFO = """
+    URTU_INFO = """
 {} 
 
 
@@ -486,7 +478,7 @@ Exp: /set_tutorial ویڈیو لنک
 
 نیز آپ کی ٹیم ویڈیو جمع کرنے کی تربیت دے گی..."""
 
-GUJARATI_INFO = """
+    GUJARATI_INFO = """
 અરે {} 
 
 
@@ -515,7 +507,7 @@ GUJARATI_INFO = """
 
 તેમજ તમારી ટીમ વિડિયો કલેક્શનની તાલીમ આપશે..."""
 
-KANNADA_INFO = """
+    KANNADA_INFO = """
 ಹೇ {}
 
 ಈಗ ನೀವು ಟೆಲಿಗ್ರಾಮ್‌ನಲ್ಲಿಯೂ ಹಣ ಗಳಿಸಬಹುದು.
@@ -543,7 +535,7 @@ KANNADA_INFO = """
 
 ನಿಮ್ಮ ತಂಡವು ವೀಡಿಯೋ ಸಂಗ್ರಹಣೆಗೆ ತರಬೇತಿ ನೀಡಲಿದೆ..."""
 
-BANGLADESH_INFO = """
+    BANGLADESH_INFO = """
 আরে {}
 
 এখন আপনি টেলিগ্রামেও অর্থ উপার্জন করতে পারেন।
@@ -571,17 +563,17 @@ BANGLADESH_INFO = """
 
 এছাড়াও আপনার দল ভিডিও সংগ্রহের প্রশিক্ষণ দেবে..."""
 
-COPYRIGHT_INFO = """
+    COPYRIGHT_INFO = """
 ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
 ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ. ᴊᴜꜱᴛ ꜰᴏʀ ᴇᴀꜱʏ ꜱᴇᴀʀᴄʜɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢ ꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ. ɪᴛ ɪꜱ ꜰᴏʀʙɪʙʙᴇɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ꜱᴛʀᴇᴀᴍ, ʀᴇᴘʀᴏᴅᴜᴄᴇ, ꜱʜᴀʀᴇ ᴏʀ ᴄᴏɴꜱᴜᴍᴇ ᴄᴏɴᴛᴇɴᴛ ᴡɪᴛʜᴏᴜᴛ ᴇxᴘʟɪᴄɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ ᴏʀ ʟᴇɢᴀʟ ᴄᴏᴘʏʀɪɢʜᴛ ʜᴏʟᴅᴇʀ. ɪꜰ ʏᴏᴜ ʙᴇʟɪᴇᴠᴇ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴠɪᴏʟᴀᴛɪɴɢ ʏᴏᴜʀ ɪɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ ᴘʀᴏᴘᴇʀᴛʏ, ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ʀᴇꜱᴘᴇᴄᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ ꜰᴏʀ ʀᴇᴍᴏᴠᴀʟ. ᴛʜᴇ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴏᴡɴ ᴀɴʏ ᴏꜰ ᴛʜᴇꜱᴇ ᴄᴏɴᴛᴇɴᴛꜱ, ɪᴛ ᴏɴʟʏ ɪɴᴅᴇx ᴛʜᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ..."""
 
-TAMIL_PREMIUM = """
+    TAMIL_PREMIUM = """
 Iꜰ Yᴏᴜ Wᴀɴᴛ Tᴏ ʙᴜʏ Pʀᴇᴍɪᴜᴍ 💸
 
 Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ /buy_premium"""
 
-RENDERING_TXT = """
+    RENDERING_TXT = """
 ⚡️ʟɪᴠᴇ sʏsᴛᴇᴍ sᴛᴀᴛᴜs ⚡️
 
 ❂ ʀᴀᴍ ●●●●●●●◌◌◌
@@ -590,18 +582,12 @@ RENDERING_TXT = """
 
 ᴠ10.5 [sᴛᴀʙʟᴇ]"""
 
-PREMIUM_TXT = """🎖️ PREMIUM MEMBERSHIP 🎖️
-🎖 PREMIUM MEMBERSHIP LIVE! 🎖
+    PREMIUM_TXT = """🎖️ PREMIUM MEMBERSHIP LIVE! 🎖️
 🔥 LATEST MOVIES & SERIES — SAME DAY RELEASE
 🚫 NO ADS | 🌐 ALL LANGUAGES | ❌ NO FREE TRIAL
 
-⚡ WE ARE HAPPY TO ANNOUNCE OUR BOT'S PREMIUM MEMBERSHIP FOR PREMIUM USERS IN CHEAP RATES ⚜️
 🎯 OFFER ENDING 5 JUNE! 🎯
 
-🥶 BENEFITS OF IT:
-👉 FREE MOVIES / SERIES
-👉 NEW RELEASES ON SAME DAY
-👉 WITHOUT ANY ADS
 💸 NEW PRICES:
 ✨ 1 Month – ₹100 (Quick access, no commitment)
 🔥 3 Month – ₹225 (₹75/mo — Save ₹225)
@@ -609,25 +595,14 @@ PREMIUM_TXT = """🎖️ PREMIUM MEMBERSHIP 🎖️
 ⭐️ 9 Month – ₹450 (₹50/mo — Save ₹450)
 🏆 12 Month – ₹550 (₹45/mo — Save ₹550)
 
-👉 EVERY LANGUAGE AVAILABLE
-👉 5 days free Trial
-
-🥶 PRICE:
-💸 ONLY 50₹ / Month
-
-🚨 If You Need To buy Contact @Simplifytuber2 to buy."""
 ⚠️ LIMITED SLOTS!
 💬 DM 👉 @Simplifytuber2 TO BUY NOW!"""
 
-BUY_INFO = """ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴏɴʟʏ ғᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ"""
+    BUY_INFO = """ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ᴏɴʟʏ ғᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ"""
 
 
-MAIN_CHANNEL = """⍟───[ ᴊᴏɪɴ ᴏᴜʀ ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ]───⍟
+    MAIN_CHANNEL = """⍟───[ ᴊᴏɪɴ ᴏᴜʀ ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ]───⍟
 
 <a href='https://telegram.me/moviesimplyfytuber'>𝐎𝐔𝐑 𝐁𝐎𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</a>
 
 <a href='https://t.me/moviesimplyfytuber'>𝐎𝐔𝐑 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐌𝐎𝐕𝐈𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</a>"""
-
-
-
-
